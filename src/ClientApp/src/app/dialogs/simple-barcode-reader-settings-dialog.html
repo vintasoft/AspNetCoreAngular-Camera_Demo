@@ -1,0 +1,31 @@
+<div class="modal-header">
+  <h4 class="modal-title">Read barcodes</h4>
+</div>
+<div class="modal-body">
+  <div class="modalDialogBodyContent">
+    <input id="QR" type="checkbox" value="QR" class="">
+    <label for="QR" class="">QR</label>
+    <br class="">
+    <input id="DataMatrix" type="checkbox" value="DataMatrix" class="">
+    <label for="DataMatrix" class="">DataMatrix</label>
+    <br class="">
+    <input id="PDF417" type="checkbox" value="PDF417" class="">
+    <label for="PDF417" class="">PDF417</label>
+    <br class="">
+    <input id="Aztec" type="checkbox" value="Aztec" class="">
+    <label for="Aztec" class="">Aztec</label>
+    <br class="">
+    <input id="Code39" type="checkbox" value="Code39" class="">
+    <label for="Code39" class="">Code39</label>
+    <br class="">
+    <input id="Code128" type="checkbox" value="Code128" class="">
+    <label for="Code128" class="">Code128</label>
+    <br class="">
+    <input id="EAN8" type="checkbox" value="EAN8" class="">
+    <label for="EAN8" class="">EAN8</label>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" localizationid="ReadButton" (click)="readBarcodesButtonClicked()">Read</button>
+  <button type="button" localizationid="CancelButton" (click)="closeDialog()">Cancel</button>
+</div>

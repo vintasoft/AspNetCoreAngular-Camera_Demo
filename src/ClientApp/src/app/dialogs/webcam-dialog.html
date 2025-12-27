@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h4 class="modal-title">Capture image from camera</h4>
+</div>
+<div class="modal-body">
+  <div class="modalDialogBodyContent" localizationId="webCamDialog">
+    <div style="text-align: center; overflow: auto">
+      <video id="webCamVideo" autoplay="autoplay"></video>
+    </div>
+    <div style="text-align:center;margin-top:5px">
+      <label id="videoInputLabel" localizationId="videoInputLabel" style="margin-left:5px; margin-right:5px;">Video source: </label><select id="videoSourceSelect"></select>
+      <input type="button" id="refreshDevicesListButton" value="Refresh devices" localizationId="refreshDevicesButton" />
+      <br />
+      <input id="captureVideoFrameButton" type="button" value="Capture image" localizationId="captureImageButton" disabled />
+      <canvas id="capturedFrameCanvas" style="display:none"></canvas>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="close()">Close</button>
+</div>
